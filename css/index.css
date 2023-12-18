@@ -1,3 +1,82 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-size: 15px;
+  position: relative;
+  min-height: 100vh;
+  color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+* {
+  font-family: var(--font-main);
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --swiper-theme-color: #007aff;
+}
+:root {
+  --shadow-xl: 0px 1px 3px rgba(0, 0, 0, 0.11), 0px 6px 14px rgba(0, 0, 0, 0.13);
+  --shadow-lg: 0px 1px 2px rgba(0, 0, 0, 0.11), 0px 3px 7px rgba(0, 0, 0, 0.13);
+  --shadow-md: 0px 0px 4px rgba(0, 0, 0, 0.4), 0px 4px 32px rgba(0, 0, 0, 0.16);
+  --shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-xs: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+:root {
+  --font-main: "Roboto", sans-serif;
+  --font-second: -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  --text-xl: 400 32px/40px var(--font-main);
+  --text-lg: 400 24px/32px var(--font-main);
+  --text-md: 400 16px/24px var(--font-main);
+  --text-sm: 400 14px/20px var(--font-main);
+  --text-xs: 400 12px/16px var(--font-main);
+  --text-xl-7: 700 32px/40px var(--font-main);
+  --text-lg-7: 700 24px/32px var(--font-main);
+  --text-md-7: 700 16px/24px var(--font-main);
+  --text-sm-7: 700 14px/20px var(--font-main);
+  --text-xs-7: 700 12px/16px var(--font-main);
+}
+:root {
+  --color-aBlue: #38466e;
+  --color-blue: #2f80ed;
+  --color-red: #ff0000;
+  --color-redDark: #d9000c;
+  --color-black: #1e1e1e;
+  --color-cyanBlue: #808d9a;
+  --color-shadeOrange: #f3f1f0;
+  --color-bugle: #f7f7f7;
+  --color-shadeBlue: #f7f9ff;
+  --color-white: #ffffff;
+  --color-shadeGray: #d4d4d4;
+  --color-shadeBrown: #a8b0b9;
+  --color-gray: #a3a2a1;
+  --color-blue-light: #2f80ed;
+  --color-green: #27ae60;
+  --color-pallete-red: hsl(0, 100%, 50%);
+  --color-pallete-blue: hsl(214, 84%, 50%);
+  --color-pallete-yellow: hsl(52, 100%, 50%);
+  --color-pallete-orange: hsl(36, 100%, 50%);
+  --color-pallete-green: hsl(136, 50%, 50%);
+  --color-pallete-violet: hsl(276, 70%, 50%);
+  --color-pallete-cyan: hsl(187, 77%, 50%);
+  --color-pallete-white: hsl(0, 0%, 100%);
+  --color-pallete-black: hsl(17, 2%, 10%);
+}
+img {
+  max-width: 100%;
+  color: transparent;
+}
 main.main {
   display: flex;
   flex-direction: column;
@@ -387,4 +466,147 @@ main.main {
 }
 .interactive-buy * {
   color: var(--ui);
+}
+.main-preview-aside picture,
+.main-preview-aside img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1439px) {
+  .main-preview {
+    margin-bottom: 74px;
+  }
+  .main-preview-wrapper {
+    height: 264px;
+  }
+  .main-preview-aside {
+    flex-basis: 228px;
+  }
+  .main-preview-slider {
+    background-image: url(../img/slider-1439.png);
+  }
+  .main-category {
+    margin-bottom: 32px;
+  }
+  .main-category-item {
+    flex-basis: 144px;
+    padding: 0 0 12px;
+  }
+  .main-category-item__img {
+    width: 98px;
+    height: 98px;
+    margin-bottom: 8px;
+  }
+  .main-widget {
+    margin-bottom: 48px;
+  }
+  .card img {
+    height: 205px;
+  }
+  .card-images {
+    height: 205px;
+  }
+  .widget-grid:not([class^="swiper-wrapper"]) {
+    grid-gap: 24px;
+    --widget-grid-column: 4;
+    --widget-grid-width: 168px;
+  }
+  .interactive-buy--images [data-image="vector-blue"] {
+    right: 344px;
+  }
+  .interactive-buy--images [data-image="phone"] {
+    right: 280px;
+  }
+  .interactive-buy--images [data-image="page"] {
+    right: -180px;
+  }
+  .interactive-buy--images [data-image="vector-red"] {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .main-preview {
+    margin-bottom: 55px;
+  }
+  .main-preview-aside {
+    display: none;
+  }
+  .main-preview-slider {
+    background-image: url(../img/slider-1023.png);
+  }
+  .main-category-title {
+    font: var(--text-lg-7);
+  }
+  .main-category-item:nth-last-child(1) {
+    display: none;
+  }
+  .main-category-item:nth-last-child(2) {
+    display: none;
+  }
+  .main-widget {
+    margin-bottom: 40px;
+  }
+  .widget-title {
+    font: var(--text-lg-7);
+    margin-bottom: 16px;
+  }
+  .widget-grid:not([class^="swiper-wrapper"]) {
+    grid-gap: 16px;
+    --widget-grid-column: 4;
+    --widget-grid-width: 168px;
+  }
+  .card-content {
+    padding: 12px 9px 6px;
+  }
+  .card-prices {
+    margin-bottom: 4px;
+  }
+  .card-title {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .card-city {
+    font-size: 9px;
+    line-height: 11px;
+    margin-bottom: 3px;
+  }
+  .card-action-more {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .card-price {
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 3px;
+  }
+  .card img {
+    height: 157px;
+  }
+  .card-images {
+    height: 157px;
+  }
+  .interactive-buy {
+    --height: 200px;
+  }
+  .interactive-buy--content {
+    padding: 40px 25px 25px;
+  }
+  .interactive-buy--images [data-image="vector-blue"] {
+    top: 8px;
+    right: 160px;
+  }
+  .interactive-buy--images [data-image="phone"] {
+    right: 20px;
+    bottom: -20px;
+  }
+  .interactive-buy--images [data-image="page"] {
+    display: none;
+  }
+  .interactive-buy--images [data-image="vector-red"] {
+    bottom: 0;
+    max-width: 200px;
+    right: -28px;
+    display: flex;
+  }
 }
