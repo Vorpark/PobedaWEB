@@ -8,7 +8,22 @@ window.addEventListener("scroll", function () {
 });
 //Catalog_button
 const catalog_button = document.getElementById("navbarButton");
+const mobileCatalogTopButton = document.getElementById(
+  "mobileCatalogTopButton"
+);
+const mobileCatalogDownButton = document.getElementById(
+  "mobileCatalogDownButton"
+);
+mobileCatalogTopButton.onclick = function () {
+  openCatalog();
+};
+mobileCatalogDownButton.onclick = function () {
+  openCatalog();
+};
 catalog_button.onclick = function () {
+  openCatalog();
+};
+function openCatalog() {
   let navbar_catalog = document.getElementById("navbarCatalog");
   if (!navbar_catalog.classList.contains("is-active")) {
     navbar_catalog.classList.add("is-active");
@@ -16,7 +31,7 @@ catalog_button.onclick = function () {
   } else {
     navbar_catalog.classList.remove("is-active");
   }
-};
+}
 async function scrollWindow() {
   window.scrollTo(0, 0);
 }

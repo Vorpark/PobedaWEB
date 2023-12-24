@@ -613,10 +613,10 @@ main.main {
     display: flex;
   }
 }
-main.main {
-  padding-top: 60px;
-}
 @media (max-width: 767px) {
+  main.main {
+    padding-top: 60px;
+  }
   .main-category-title {
     font: var(--text-md-7);
   }
