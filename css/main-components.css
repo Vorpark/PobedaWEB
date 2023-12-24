@@ -187,6 +187,76 @@ header.header {
   margin-right: 8px;
   background-image: url("../img/icon-phone.png");
 }
+.navbar-mobile-top {
+  position: absolute;
+  width: 100%;
+  top: 90px;
+}
+.navbar-mobile .nav,
+.navbar-mobile-top .nav {
+  margin-top: 5px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-mobile .nav-item,
+.navbar-mobile-top .nav-item {
+  flex-grow: 1;
+  text-align: center;
+  color: #808d9a;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-mobile .nav-item-icon,
+.navbar-mobile-top .nav-item-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.navbar-mobile .nav-item-label,
+.navbar-mobile-top .nav-item-label {
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+.ui-icon-catalog {
+  background-image: url(../img/icon-list.png);
+}
+.ui-icon-percent {
+  background-image: url(../img/icons-percent.png);
+}
+.ui-icon-category-telefony-mobile {
+  background-image: url(../img/icon-phone-gray.png);
+}
+.ui-icon-category-instrument-mobile {
+  background-image: url(../img/icon-drill-gray.png);
+}
+.navbar-mobile {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  height: 64px;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  z-index: var(--navbarMobile-index, 11);
+}
+.navbar-mobile,
+.navbar-mobile-top {
+  display: none;
+}
+.navbar-mobile .nav-item.is-active {
+  color: var(--color-red);
+}
 @media (max-width: 1023px) {
   .navbar-top .navbar-city {
     display: none;
@@ -801,5 +871,84 @@ button {
   .footer-contacts {
     margin-left: 0;
     margin-top: 1px;
+  }
+}
+@media (max-width: 767px) {
+  header.header {
+    position: absolute;
+    z-index: 97;
+  }
+  .navbar-top {
+    display: none;
+  }
+  .navbar {
+    padding-bottom: 0;
+  }
+  .navbar-container {
+    align-items: center;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  .j-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+  }
+  .navbar-logo {
+    margin-bottom: 0;
+    margin-right: 0px;
+  }
+  .navbar .navbar-city {
+    margin-right: 0;
+    margin-left: auto;
+    width: auto;
+  }
+  .navbar-catalog-button {
+    display: none;
+  }
+  .navbar .elastic-search {
+    margin-top: 12px;
+    min-width: 100%;
+  }
+  .navbar .nav {
+    display: none;
+  }
+  .elastic-search-input {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .navbar-mobile,
+  .navbar-mobile-top {
+    display: block;
+  }
+  .main-preview {
+    margin-bottom: 50px;
+    margin-top: 12px;
+  }
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-categories {
+    padding: 0;
+    margin-bottom: 37px;
+    height: auto;
+  }
+  .footer-contacts {
+    margin-top: 0;
+    max-width: 260px;
+  }
+  .footer-contacts-email {
+    margin-bottom: 18px;
+  }
+  .footer-contacts-item {
+    margin-bottom: 2px;
+  }
+  .footer-logo-label {
+    margin-bottom: 25px;
+    max-width: 220px;
   }
 }

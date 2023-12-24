@@ -1,7 +1,10 @@
 //Navbar sticky
 window.addEventListener("scroll", function () {
   var navbar = document.getElementById("navbar");
-  navbar.classList.toggle("sticky", window.scrollY > 0);
+  var windowOuterWidth = window.outerWidth;
+  if (windowOuterWidth - 14 > 767) {
+    navbar.classList.toggle("sticky", window.scrollY > 0);
+  }
 });
 //Catalog_button
 const catalog_button = document.getElementById("navbarButton");
