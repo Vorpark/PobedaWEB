@@ -398,3 +398,24 @@ main.main {
     line-height: 23px;
   }
 }
+@media (max-width: 767px) {
+  main.main {
+    padding-top: 60px;
+  }
+  .breadcrumbs {
+    padding: 16px 0 16px;
+  }
+  .app-content {
+    padding-bottom: 40px;
+  }
+  .cart-container {
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr;
+  }
+  .cart-order {
+    position: static;
+  }
+  .cart-order--label {
+    padding: 16px 0 16px;
+  }
+}

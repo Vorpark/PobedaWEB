@@ -453,3 +453,35 @@ main.main {
     max-width: 340px;
   }
 }
+@media (max-width: 767px) {
+  main.main {
+    padding-top: 60px;
+  }
+  .breadcrumbs {
+    padding: 16px 0 16px;
+  }
+  .checkout-container {
+    grid-row-gap: 16px;
+  }
+  .checkout-form--checkboxes {
+    margin-right: 0;
+    flex-direction: column;
+  }
+  .checkout-form .j-form-field > *:not(:last-child) {
+    margin-right: 0;
+  }
+  .checkout-form--checkboxes > div,
+  .checkout-form--checkboxes > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .checkout-form .j-form-field > *:not(:last-child) {
+    margin-right: 0;
+  }
+  .checkout-data .checkout-form--field {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 16px;
+  }
+}

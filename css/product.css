@@ -761,3 +761,39 @@ main.main {
     display: flex;
   }
 }
+@media (max-width: 767px) {
+  main.main {
+    padding-top: 40px;
+  }
+  .p-header--title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+  }
+  .p-header--labels {
+    padding-bottom: 0;
+    margin-right: -20px;
+    margin-bottom: 12px;
+  }
+  .j-tabs[data-theme="product"] .j-tab {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+  .j-tabs[data-theme="product"] .j-tab-content[data-active] {
+    padding-top: 20px;
+  }
+  .p-description--item {
+    margin-bottom: 24px;
+  }
+  .p-description .j-tabs .j-tab-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .p-description--item-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+}

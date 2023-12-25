@@ -257,6 +257,25 @@ header.header {
 .navbar-mobile .nav-item.is-active {
   color: var(--color-red);
 }
+
+.ui-icon-home {
+  background-image: url(../img/icon-home-mobile.png);
+}
+.nav-item.is-active .ui-icon-home {
+  background-image: url(../img/icon-home-mobile-red.png);
+}
+.ui-icon-cart {
+  background-image: url(../img/icon-cart-mobile.png);
+}
+.nav-item.is-active .ui-icon-cart {
+  background-image: url(../img/icon-cart-mobile-red.png);
+}
+.ui-icon-inventory {
+  background-image: url(../img/icon-docs.png);
+}
+.ui-icon-person {
+  background-image: url(../img/icon-user.png);
+}
 @media (max-width: 1023px) {
   .navbar-top .navbar-city {
     display: none;
